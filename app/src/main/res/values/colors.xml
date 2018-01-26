@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A97443</color>
+    <color name="colorPrimaryDark">#44352D</color>
+    <color name="colorAccent">#D75F35</color>
+    <color name="colorWebsiteTab">#CFA16B</color>
+    <color name="colorPageTab">#A97443</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+    <color name="colorTobago">#44352D</color>
+    <color name="colorChileanFire">#D75F35</color>
+    <color name="colorFallow">#CFA16B</color>
+    <color name="colorChamois">#E8C897</color>
+    <color name="colorBourbon">#A97443</color>
+    <color name="colorBluryWood">#E1BE8B</color>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OBKM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about_bkm">"Hi, my name is Oluwabukunmi. I am a mobile-app developer for android. I love to program and teach programming "</string>
+
+    <string name="skills">* Java "\n"* Kotlin "\n"* Illustrator "\n"* Adobe XD "\n"* Teaching </string>
+
+    <string name="work"> * e-Shop sms "\n"* Secure 9ja "\n"* Uwi App  "\n"* Teaching Programming </string>
+
+    <string name="contact"> </string>
+</resources>

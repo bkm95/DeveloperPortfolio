@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ng.com.bkm.developerportfolio.MainActivity">
+    <!-- Note: i used Linear layout instead of relative layout because it was red, which implies performance issue but later ignored-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mainCardView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/profile_image"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="1dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/devName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Aluko \nOluwabukunmi"
+                android:textColor="@color/colorWhite"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/devProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/devName"
+                android:layout_marginTop="10dp"
+                android:text="Android Developer"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:id="@+id/cardView2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="26sp"
+                android:text="Get in Touch"
+                android:id="@+id/getInTouch"
+                android:textColor="@color/colorWhite"
+                android:paddingRight="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_call"
+                android:layout_toRightOf="@+id/getInTouch"
+                android:layout_centerVertical="true"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardView2"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabLayout"
+            android:background="@color/colorPageTab">
+        </android.support.design.widget.TabLayout>
+        <!-- Note: if you use colour accent, the tab line wont show-->
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewPager"
+            android:layout_marginTop="45dp">
+
+        </android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
